@@ -27,3 +27,17 @@
     transform: translateX(-100%);
   }
 }
+
+.heading-paragraph {
+  color: $text-color-light;
+  text-transform: lowercase;
+  overflow: hidden;
+  max-width: 55rem;
+
+  &--main {
+    font-size: 2.2rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    transform: translateX(-100%);
+  }
+}

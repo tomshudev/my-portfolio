@@ -16,7 +16,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
-    <link rel="stylesheet" href="css/style.comp.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Portfolio</title>
   </head>
@@ -107,28 +111,88 @@
         <div class="about">
           <div class="about__left">
             <div class="heading-primary">
-              <div class="heading-primary--main animate-page-1">Tom</div>
+              <div class="heading-primary--main animate-page-1">Who</div>
               <br />
-              <div class="heading-primary--main animate-page-1">Shushan</div>
+              <div class="heading-primary--main animate-page-1">Am I ?</div>
             </div>
             <span class="bold-lines about-bold-lines"></span>
             <span class="bold-lines about-bold-lines"></span>
-            <div class="heading-secondary">
-              <div class="heading-secondary--main animate-page-1">
-                web designer /<br />
-                developer.
+            <div class="heading-paragraph">
+              <div class="heading-paragraph--main animate-page-1">
+                my name is Tom, I have over seven yerars of experience in
+                programming and web development<br />
+                i've made multiple web applications from start to finish, in all
+                scales, from small to hugh<br />
+                right now i'm looking for new adeventure, make landing pages /
+                web applications for anyone who needs it
               </div>
             </div>
           </div>
-          <div class="about__image">
+          <div class="about__image image__about">
             <div class="about__image--over">
-              <div class="about__image--cover"></div>
-              <div class="about__image--cover"></div>
+              <div class="about__image--cover about__image-image"></div>
+              <div class="about__image--cover about__image-image"></div>
             </div>
             <div class="about__image--number">
               <div class="about__image--number-box">01</div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="about">
+          <div class="about__left">
+            <div class="heading-primary">
+              <div class="heading-primary--main animate-page-2">My WORK</div>
+              <br />
+              <!-- <div class="heading-primary--main animate-page-2">Am I ?</div> -->
+            </div>
+            <span class="bold-lines work-bold-lines"></span>
+            <span class="bold-lines work-bold-lines"></span>
+            <div class="heading-paragraph">
+              <div class="heading-paragraph--main animate-page-2">
+                my name is Tom, I have over seven yerars of experience in
+                programming and web development<br />
+                i've made multiple web applications from start to finish, in all
+                scales, from small to hugh<br />
+                right now i'm looking for new adeventure, make landing pages /
+                web applications for anyone who needs it
+              </div>
+            </div>
+          </div>
+          <!-- <div class="about__image work__image"> -->
+          <!-- <div class="about__image--over">
+              <div class="about__image--cover work__image-image"></div>
+              <div class="about__image--cover work__image-image"></div>
+            </div> -->
+          <!-- <div class="work__gallery">
+            <div class="image--over">
+              <div class="image image__1"></div>
+            </div>
+          </div> -->
+          <div class="work__gallery">
+            <div
+              class="fotorama work__gallery--container"
+              data-transition="slide"
+              data-autoplay="5000"
+              data-arrows="false"
+              data-click="false"
+              data-swipe="false"
+              data-loop="true"
+              data-nav="false"
+              data-width="100%"
+              data-height="100%"
+              data-fit="cover"
+            >
+              <img class="image" src="img/01.JPG" />
+              <img class="image" src="img/hero.jpg" />
+              <img class="image" src="img/02.png" />
+            </div>
+            <div class="work--number">
+              <div class="work--number-box">02</div>
+            </div>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -139,10 +203,12 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"
   ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.extensions.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <script src="./js/home.js"></script>
+  <script src="./js/about.js"></script>
   <script src="./js/parallax.js"></script>
 </html>

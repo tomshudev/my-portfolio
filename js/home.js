@@ -3,7 +3,7 @@ let homeInFirst = () => {
     targets: ".navigation--link",
     translateX: ["-30rem", 0],
     delay: 300,
-    duration: 200
+    duration: 200,
   });
   anime
     .timeline()
@@ -13,19 +13,19 @@ let homeInFirst = () => {
       translateZ: 0,
       easing: "easeInOutCubic",
       duration: 800,
-      complete: function() {
+      complete: function () {
         $(".loader").addClass(".js-hidden");
-      }
+      },
     })
     .add({
       targets: ".animate-heading",
       translateX: ["-105%", 0],
       easing: "easeInOutCubic",
       duration: 800,
-      delay: function(el, i) {
+      delay: function (el, i) {
         return 50 * i;
       },
-      offset: "-=400"
+      offset: "-=400",
     })
     .add({
       targets: ".navigation--scroll-down",
@@ -33,7 +33,7 @@ let homeInFirst = () => {
       rotateZ: ["90deg", "90deg"],
       easing: "easeInOutCubic",
       duration: 600,
-      offset: "-=800"
+      offset: "-=800",
     })
     .add({
       targets: ".header-bold-lines",
@@ -42,7 +42,7 @@ let homeInFirst = () => {
       translateX: ["-5rem", 0],
       easing: "easeInOutCubic",
       duration: 1000,
-      offset: "-=600"
+      offset: "-=600",
     })
     .add({
       targets: ".animate-clouds",
@@ -51,10 +51,10 @@ let homeInFirst = () => {
       opacity: [0, 1],
       easing: "easeOutCubic",
       duration: 800,
-      delay: function(el, i) {
+      delay: function (el, i) {
         return 50 * i;
       },
-      offset: "-=1000"
+      offset: "-=1000",
     });
 };
 
@@ -64,16 +64,16 @@ let homeIn = () => {
     translateX: ["-105%", 0],
     easing: "easeInOutCubic",
     duration: 800,
-    delay: function(el, i) {
+    delay: function (el, i) {
       return 50 * i;
-    }
+    },
   });
   anime({
     targets: ".navigation--scroll-down",
     translateY: ["20rem", 0],
     rotateZ: ["90deg", "90deg"],
     easing: "easeInOutCubic",
-    duration: 600
+    duration: 600,
   });
   anime({
     targets: ".header-bold-lines",
@@ -81,7 +81,7 @@ let homeIn = () => {
     opacity: [0, 1],
     translateX: ["-5rem", 0],
     easing: "easeInOutCubic",
-    duration: 1000
+    duration: 1000,
   });
 
   anime({
@@ -91,9 +91,9 @@ let homeIn = () => {
     opacity: [0, 1],
     easing: "easeOutCubic",
     duration: 800,
-    delay: function(el, i) {
+    delay: function (el, i) {
       return 50 * i;
-    }
+    },
   });
 };
 
@@ -103,16 +103,9 @@ let homeOut = () => {
     translateX: [0, "-105%"],
     easing: "easeInOutCubic",
     duration: 800,
-    delay: function(el, i) {
+    delay: function (el, i) {
       return 50 * i;
-    }
-  });
-  anime({
-    targets: ".navigation--scroll-down",
-    translateY: [0, "20rem"],
-    rotateZ: ["90deg", "90deg"],
-    easing: "easeInOutCubic",
-    duration: 600
+    },
   });
   anime({
     targets: ".header-bold-lines",
@@ -120,7 +113,7 @@ let homeOut = () => {
     opacity: [1, 0],
     translateX: [0, "-5rem"],
     easing: "easeInOutCubic",
-    duration: 1000
+    duration: 1000,
   });
 
   anime({
@@ -129,7 +122,14 @@ let homeOut = () => {
     translateZ: 0,
     opacity: [1, 0],
     easing: "easeOutCubic",
-    duration: 800
+    duration: 800,
+  });
+  anime({
+    targets: ".navigation--scroll-down",
+    translateY: [0, "20rem"],
+    rotateZ: ["90deg", "90deg"],
+    easing: "easeInOutCubic",
+    duration: 600,
   });
 };
 
