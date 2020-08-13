@@ -40,7 +40,7 @@
         <div class="navigation--scroll-down__line"></div>
       </div>
     </div>
-    <!-- <div class="curtain"></div> -->
+    <div class="curtain"></div>
     <div id="fullpage">
       <div class="header_section section active">
         <header class="header">
@@ -160,21 +160,11 @@
               </div>
             </div>
           </div>
-          <!-- <div class="about__image work__image"> -->
-          <!-- <div class="about__image--over">
-              <div class="about__image--cover work__image-image"></div>
-              <div class="about__image--cover work__image-image"></div>
-            </div> -->
-          <!-- <div class="work__gallery">
-            <div class="image--over">
-              <div class="image image__1"></div>
-            </div>
-          </div> -->
           <div class="work__gallery">
             <div
+              id="gallery"
               class="fotorama work__gallery--container"
               data-transition="slide"
-              data-autoplay="5000"
               data-arrows="false"
               data-click="false"
               data-swipe="false"
@@ -183,10 +173,29 @@
               data-width="100%"
               data-height="100%"
               data-fit="cover"
+              data-transitionduration="1000"
             >
-              <img class="image" src="img/01.JPG" />
-              <img class="image" src="img/hero.jpg" />
-              <img class="image" src="img/02.png" />
+              <div class="work__image">
+                <img class="image" src="img/01.JPG" />
+                <div class="about__image--over">
+                  <div class="image--cover work__image-image"></div>
+                  <div class="image--cover work__image-image"></div>
+                </div>
+              </div>
+              <div class="work__image">
+                <img class="image" src="img/hero.jpg" />
+                <div class="about__image--over">
+                  <div class="image--cover work__image-image"></div>
+                  <div class="image--cover work__image-image"></div>
+                </div>
+              </div>
+              <div class="work__image">
+                <img class="image" src="img/02.png" />
+                <div class="about__image--over">
+                  <div class="image--cover work__image-image"></div>
+                  <div class="image--cover work__image-image"></div>
+                </div>
+              </div>
             </div>
             <div class="work--number">
               <div class="work--number-box">02</div>
@@ -210,5 +219,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <script src="./js/home.js"></script>
   <script src="./js/about.js"></script>
+  <script src="./js/work.js"></script>
   <script src="./js/parallax.js"></script>
 </html>

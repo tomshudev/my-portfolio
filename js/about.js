@@ -1,4 +1,12 @@
 let aboutIn = (prevIndex) => {
+  // Show image
+  anime({
+    delay: 200,
+    targets: ".about__image",
+    opacity: [0, 1],
+    duration: 0,
+  });
+
   // Animate image coming in
   anime({
     delay: 200,
@@ -54,6 +62,15 @@ let aboutIn = (prevIndex) => {
 };
 
 let aboutOut = () => {
+  // Hide image
+  anime({
+    delay: 200,
+    targets: ".about__image",
+    opacity: [1, 0],
+    easing: "easeInOutQuart",
+    duration: 1200,
+  });
+
   // Animate number box out
   anime({
     targets: ".about__image--number-box",

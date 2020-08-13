@@ -17,6 +17,7 @@
     background-image: url(../img/01.JPG);
     background-position: center;
     background-size: cover;
+    opacity: 0;
 
     &::after {
       position: absolute;
