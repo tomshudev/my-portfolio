@@ -8,9 +8,8 @@ $(document).ready(() => {
   };
 
   homeInFirst();
+  parallaxInstance = moonsScene();
   $(window).on("load", function () {
-    parallaxInstance = moonsScene();
-
     stopAutoolay();
   });
 
