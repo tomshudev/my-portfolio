@@ -20,4 +20,46 @@
     justify-content: center;
     height: 100vh;
   }
+
+  @media (max-width: 1500px) {
+    & {
+      &__left {
+        padding-right: 0;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      margin-left: 0;
+      grid-template-columns: unset;
+      grid-template-rows: 50% 50%;
+
+      &__right {
+        height: unset;
+      }
+
+      &__left {
+        align-items: center;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    & {
+      &__left {
+        align-items: unset;
+        padding: 0 4rem;
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    & {
+      &__left {
+        padding: 0 2rem;
+      }
+    }
+  }
 }

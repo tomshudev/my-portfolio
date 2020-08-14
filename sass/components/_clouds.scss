@@ -79,4 +79,146 @@
 
     // animation: cloudRight 1s ease-out;
   }
+
+  @media (max-width: 1500px) {
+    & {
+      &__moon {
+        width: 45rem;
+        height: 45rem;
+      }
+
+      &__1 {
+        width: calc(0.8 * 50rem);
+        height: calc(0.8 * 30rem);
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    & {
+      margin-left: 21rem;
+
+      &__moon {
+        width: 38rem;
+        height: 38rem;
+      }
+
+      &__1 {
+        width: calc(0.6 * 50rem);
+        height: calc(0.6 * 30rem);
+      }
+
+      &__3 {
+        top: 13rem !important;
+      }
+
+      &__4 {
+        right: 31rem !important;
+      }
+
+      &__6 {
+        right: 20rem !important;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & {
+      &__moon {
+        width: 30rem;
+        height: 30rem;
+
+        top: 0 !important;
+      }
+
+      &__1 {
+        width: calc(0.6 * 50rem);
+        height: calc(0.7 * 30rem);
+        top: 12rem !important;
+        right: 19rem !important;
+      }
+
+      &__2 {
+        top: 1rem !important;
+      }
+
+      &__3 {
+        top: 4rem !important;
+        width: 22rem;
+      }
+
+      &__4 {
+        top: 8rem !important;
+        right: 21rem !important;
+      }
+
+      &__5 {
+        top: 16rem !important;
+        right: 7rem !important;
+      }
+
+      &__6 {
+        top: -8rem !important;
+        right: 18rem !important;
+        width: 32rem;
+        height: 30rem;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    & {
+      margin-left: 16rem;
+
+      &__moon {
+        width: 25rem;
+        height: 25rem;
+      }
+
+      &__1 {
+        width: calc(0.5 * 50rem);
+        height: calc(0.6 * 30rem);
+        top: 10rem !important;
+        right: 16rem !important;
+      }
+
+      &__2 {
+        top: 0 !important;
+      }
+
+      &__3 {
+        top: 2rem !important;
+      }
+
+      &__4 {
+        top: 3.5rem !important;
+        right: 19rem !important;
+        width: 20rem;
+      }
+
+      &__5 {
+        top: 13rem !important;
+        width: 13rem;
+      }
+
+      &__6 {
+        top: -10rem !important;
+        right: 16rem !important;
+        width: 27rem;
+        height: 28rem;
+      }
+    }
+  }
+
+  @media (max-width: 370px) {
+    & {
+      margin-left: 15rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      margin-left: 13rem;
+    }
+  }
 }

@@ -7,6 +7,12 @@
   flex-direction: column;
   z-index: 9999;
 
+  @media (max-width: 900px) {
+    & {
+      display: none;
+    }
+  }
+
   &--link {
     display: block;
     margin-left: 2rem;
