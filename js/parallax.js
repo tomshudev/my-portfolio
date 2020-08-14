@@ -7,10 +7,10 @@ $(document).ready(() => {
     WORK: { index: 2, name: "work" },
   };
 
+  homeInFirst();
   $(window).on("load", function () {
     parallaxInstance = moonsScene();
 
-    homeInFirst();
     stopAutoolay();
   });
 
