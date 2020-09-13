@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,500i,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <a
+        href="#home"
+        class="navigation--link navigation--link__selected"
+        id="nav-link--0"
+      ></a>
+      <a href="#1" class="navigation--link" id="nav-link--1"></a>
+      <a href="#2" class="navigation--link" id="nav-link--2"></a>
+      <a href="#3" class="navigation--link" id="nav-link--3"></a>
+
+      <div class="navigation--scroll-down">
+        <div class="navigation--scroll-down__text">scroll down</div>
+        <div class="navigation--scroll-down__line"></div>
+      </div>
+    </div>
+    <div class="curtain"></div>
+    <div id="fullpage">
+      <div class="header_section section active">
+        <header class="header">
+          <div class="header__left">
+            <div class="heading-primary">
+              <div class="heading-primary--main animate-heading">Tom</div>
+              <br />
+              <div class="heading-primary--main animate-heading">Shushan</div>
+            </div>
+            <span class="bold-lines header-bold-lines"></span>
+            <span class="bold-lines header-bold-lines"></span>
+            <div class="heading-secondary">
+              <div class="heading-secondary--main animate-heading">
+                web designer /<br />
+                developer.
+              </div>
+            </div>
+          </div>
+          <div class="header__right">
+            <div class="clouds" id="scene">
+              <svg
+                data-depth="0.50"
+                class="clouds__cloud clouds__moon animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#moon"></use>
+              </svg>
+              <svg
+                data-depth="0.6"
+                class="clouds__cloud clouds__1 animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#large"></use>
+              </svg>
+              <svg
+                data-depth="0.4"
+                class="clouds__cloud clouds__2 animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#medium-left"></use>
+              </svg>
+              <svg
+                data-depth="0.3"
+                class="clouds__cloud clouds__3 animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#medium-right"></use>
+              </svg>
+              <svg
+                data-depth="0.9"
+                class="clouds__cloud clouds__4 animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#medium"></use>
+              </svg>
+              <svg
+                data-depth="0.7"
+                class="clouds__cloud clouds__5 animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#small-left"></use>
+              </svg>
+              <svg
+                data-depth="0.6"
+                class="clouds__cloud clouds__6 animate-clouds"
+              >
+                <use xlink:href="img/svg/sprite.svg#small-right"></use>
+              </svg>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="section">
+        <div class="about">
+          <div class="about__left">
+            <div class="heading-primary">
+              <div class="heading-primary--main animate-page-1">Who</div>
+              <br />
+              <div class="heading-primary--main animate-page-1">Am I ?</div>
+            </div>
+            <span class="bold-lines about-bold-lines"></span>
+            <span class="bold-lines about-bold-lines"></span>
+            <div class="heading-paragraph">
+              <div class="heading-paragraph--main animate-page-1">
+                my name is Tom, I have over seven yerars of experience in
+                programming and web development<br />
+                i've made multiple web applications from start to finish, in all
+                scales, from small to hugh<br />
+                right now i'm looking for new adeventure, make landing pages /
+                web applications for anyone who needs it
+              </div>
+            </div>
+          </div>
+          <div class="about__image image__about">
+            <div class="about__image--over">
+              <div class="about__image--cover about__image-image"></div>
+              <div class="about__image--cover about__image-image"></div>
+            </div>
+            <div class="about__image--number">
+              <div class="about__image--number-box">01</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="about">
+          <div class="about__left">
+            <div class="heading-primary">
+              <div class="heading-primary--main animate-page-2">My WORK</div>
+              <br />
+              <!-- <div class="heading-primary--main animate-page-2">Am I ?</div> -->
+            </div>
+            <span class="bold-lines work-bold-lines"></span>
+            <span class="bold-lines work-bold-lines"></span>
+            <div class="heading-paragraph">
+              <div class="heading-paragraph--main animate-page-2">
+                my name is Tom, I have over seven yerars of experience in
+                programming and web development<br />
+                i've made multiple web applications from start to finish, in all
+                scales, from small to hugh<br />
+                right now i'm looking for new adeventure, make landing pages /
+                web applications for anyone who needs it
+              </div>
+            </div>
+          </div>
+          <div class="work__gallery">
+            <div
+              id="gallery"
+              class="fotorama work__gallery--container"
+              data-transition="slide"
+              data-arrows="false"
+              data-click="false"
+              data-swipe="false"
+              data-loop="true"
+              data-nav="false"
+              data-width="100%"
+              data-height="100%"
+              data-fit="cover"
+              data-transitionduration="1000"
+            >
+              <div class="work__image">
+                <img class="image" src="img/01.JPG" />
+                <div class="about__image--over">
+                  <div class="image--cover work__image-image"></div>
+                  <div class="image--cover work__image-image"></div>
+                </div>
+              </div>
+              <div class="work__image">
+                <img class="image" src="img/hero.jpg" />
+                <div class="about__image--over">
+                  <div class="image--cover work__image-image"></div>
+                  <div class="image--cover work__image-image"></div>
+                </div>
+              </div>
+              <div class="work__image">
+                <img class="image" src="img/02.png" />
+                <div class="about__image--over">
+                  <div class="image--cover work__image-image"></div>
+                  <div class="image--cover work__image-image"></div>
+                </div>
+              </div>
+            </div>
+            <div class="work--number">
+              <div class="work--number-box">02</div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./js/home.js"></script>
+  <script src="./js/about.js"></script>
+  <script src="./js/work.js"></script>
+  <script src="./js/parallax.js"></script>
+</html>

@@ -1,0 +1,69 @@
+.about {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-left: 10rem;
+  overflow: hidden;
+
+  &__left {
+    z-index: 10;
+  }
+
+  &__image {
+    width: 53%;
+    height: 74%;
+    position: absolute;
+    margin-left: 33%;
+    background-image: url(../img/01.JPG);
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      background: linear-gradient(
+        to bottom right,
+        rgba(#ffdee6, 0.4) 0%,
+        rgba(#ff0b55, 0.9) 100%
+      );
+
+      mix-blend-mode: darken;
+    }
+
+    &--over {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &--cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: #ff4d5a;
+
+      &:last-child {
+        background-color: #072142;
+      }
+    }
+
+    &--number {
+      color: $text-color-light;
+      font-size: 10rem;
+      position: absolute;
+      right: -7%;
+      top: 60%;
+      overflow: hidden;
+    }
+  }
+}

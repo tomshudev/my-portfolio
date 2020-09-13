@@ -1,0 +1,56 @@
+.navigation {
+  position: absolute;
+  height: 100vh;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+
+  @media (max-width: 900px) {
+    & {
+      display: none;
+    }
+  }
+
+  &--link {
+    display: block;
+    margin-left: 2rem;
+    width: 3rem;
+    height: 0.4rem;
+    background-color: $text-color-light;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    transition: all 1s;
+
+    animation: navigationIn 1s ease-out;
+    animation-iteration-count: 1;
+
+    &__selected {
+      width: 6rem;
+    }
+  }
+
+  &--scroll-down {
+    display: flex;
+    transform: rotateZ(90deg) translateX(100%);
+    bottom: 0;
+    position: fixed;
+    align-self: center;
+    align-items: center;
+    backface-visibility: hidden;
+
+    &__text {
+      text-transform: uppercase;
+      margin-right: 2rem;
+      font-size: 1.4rem;
+      color: $text-color-light;
+    }
+
+    &__line {
+      height: 0.4rem;
+      width: 25rem;
+      background-color: $text-color-light;
+    }
+  }
+}

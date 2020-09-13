@@ -1,0 +1,24 @@
+dist: xenial
+sudo: false
+
+language: node_js
+node_js:
+  - "12.4"
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run-script build:css
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: .
+  on:
+    branch: master

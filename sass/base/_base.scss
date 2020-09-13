@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-primary-dark, 1),
+    rgba($color-primary-light, 1),
+    rgba($color-secondary-light, 1)
+  );
+  overflow-y: hidden;
+}
